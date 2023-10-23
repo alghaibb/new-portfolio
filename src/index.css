@@ -9,4 +9,9 @@
     html {
         font-family: 'Poppins', sans-serif; 
     }
+    li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
 }
+
