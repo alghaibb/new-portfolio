@@ -18,7 +18,7 @@ const Skills = () => {
         <div>
           <p className='text-4xl font-bold inline border-b-4 border-gray-900'>Skills</p>
           <p className='py-4'>These are the technologies/tools I've learn't 
-          throughout my coding bootcamp:</p>
+          throughout my coding bootcamp</p>
         </div>
         <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
@@ -56,7 +56,7 @@ const Skills = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Skills
