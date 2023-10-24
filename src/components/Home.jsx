@@ -3,7 +3,7 @@ import {HiArrowNarrowRight} from 'react-icons/hi'
 
 const Home = () => {
   return (
-    <div name='home' className= 'w-full h-screen bg-[#e2e2e2]'>
+    <div name='home' className='w-full h-screen bg-[#e2e2e2]'>
       {/* container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className='font-semibold'>Hi, my name is</p>
@@ -18,9 +18,11 @@ const Home = () => {
           and get in touch to discuss how I can contribute to your next project or collaborate on exciting ventures 
           in the tech world</p>
           <div>
-            <button className='text-gray-900 border-2 group border-gray-900 px-6 py-3 my-2 flex items-center hover:bg-[#1552ad] hover:border-[#1552ad] hover:text-white'>
+            <button className='text-gray-900 border-2 group border-gray-900 px-6 
+            py-3 my-2 flex items-center hover:bg-[#1552ad] hover:border-[#1552ad] 
+            hover:text-white hover:scale-110 hover:-translate-y-1 duration-300 ease-in-out '>
               View Projects 
-            <span className='group-hover:rotate-90 duration-300'>
+            <span className='group-hover:rotate-90 duration-300 hover:scale-110 hover:-translate-y-1'>
               <HiArrowNarrowRight className='ml-3'/>
             </span>
             </button>

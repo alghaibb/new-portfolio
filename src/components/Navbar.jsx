@@ -3,6 +3,7 @@ import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from '../assets/logo.png'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -16,11 +17,31 @@ const Navbar = () => {
       
       {/* menu */}
       <ul className='hidden md:flex text-gray-300'>
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li className='no-underline hover:underline'>
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className='no-underline hover:underline'>
+          <Link to="about" smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li className='no-underline hover:underline'>
+          <Link to="skills" smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li className='no-underline hover:underline'>
+          <Link to="projects" smooth={true} duration={500}>
+            Projects
+          </Link>
+        </li>
+        <li className='no-underline hover:underline'>
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
 
       {/* hamburger menu */}
@@ -30,11 +51,31 @@ const Navbar = () => {
       
       {/* mobile menu */}
       <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#1552ad] flex flex-col justify-center items-center'}>
-        <li className='pt-6 text-4xl'>Home</li>
-        <li className='pt-6 text-4xl'>About</li>
-        <li className='pt-6 text-4xl'>Skills</li>
-        <li className='pt-6 text-4xl'>Projects</li>
-        <li className='pt-6 text-4xl'>Contact</li>
+        <li className='pt-6 text-4xl no-underline hover:underline'>
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className='pt-6 text-4xl no-underline hover:underline'>
+          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li className='pt-6 text-4xl no-underline hover:underline'>
+          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li className='pt-6 text-4xl no-underline hover:underline'>
+          <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
+            Projects
+          </Link>
+        </li>
+        <li className='pt-6 text-4xl no-underline hover:underline'>
+          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
       
       {/* social icons */}
