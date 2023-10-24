@@ -7,9 +7,9 @@ const Home = () => {
       {/* container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className='font-semibold'>Hi, my name is</p>
-        <h1 className='text-4xl sm:text-7xl font-bold'>Mahmoud Jaderi</h1>
-        <h2 className='text-4xl sm:text-7xl font-bold'>I'm a Junior Full Stack Developer</h2>
-        <p className='py-4 max-w-[700px]'>With a passion for creating innovative web applications and a strong commitment to continuous learning. 
+        <h1 className='text-4xl text-gray-900 sm:text-7xl font-bold'>Mahmoud Jaderi</h1>
+        <h2 className='text-4xl text-gray-900 sm:text-7xl font-bold'>I'm a Junior Full Stack Developer</h2>
+        <p className='py-4 max-w-[700px] text-gray-900'>With a passion for creating innovative web applications and a strong commitment to continuous learning. 
           Throughout my journey as a student in a coding bootcamp, I've had the opportunity to explore the diverse 
           world of web development, from designing user-friendly interfaces to building robust server-side solutions. 
           My portfolio showcases a selection of projects that reflect my dedication to honing my technical skills 
@@ -18,7 +18,7 @@ const Home = () => {
           and get in touch to discuss how I can contribute to your next project or collaborate on exciting ventures 
           in the tech world</p>
           <div>
-            <button className='border-2 group border-gray-700 px-6 py-3 my-2 flex items-center hover:bg-[#1552ad] hover:border-[#1552ad] hover:text-white'>
+            <button className='text-gray-900 border-2 group border-gray-900 px-6 py-3 my-2 flex items-center hover:bg-[#1552ad] hover:border-[#1552ad] hover:text-white'>
               View Projects 
             <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-3'/>
@@ -27,7 +27,7 @@ const Home = () => {
           </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Home
